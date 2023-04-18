@@ -1,0 +1,10 @@
+[ProjectGroup]
+Version=1.0
+[Project1]
+ProjectPath=01.connect\001.botom.PrjPcb
+[Project2]
+ProjectPath=02.fpgaboard\002.fpgaboard.PrjPcb
+[Project3]
+ProjectPath=002.fpgaboardV2\002.fpgaboard-V2.PrjPcb
+[Project4]
+ProjectPath=sensor\003.sensor.PrjPcb
