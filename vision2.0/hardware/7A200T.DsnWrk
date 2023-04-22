@@ -6,3 +6,9 @@ ProjectPath=001.fpgaboardV2\001.fpgaboard-V2.PrjPcb
 ProjectPath=002.botom\002.botom.PrjPcb
 [Project3]
 ProjectPath=003.ccd424\003.ccd424.PrjPcb
+[Project4]
+ProjectPath=004.tg1304ap\004.tg1304ap.PrjPcb
+[Project5]
+ProjectPath=..\..\..\..\Work\PCBDesign\Altium Designer\Library\Library\0.自建\1.CCD封装\0.01-CCD.LibPkg
+[Project6]
+ProjectPath=..\..\..\..\Work\PCBDesign\Altium Designer\Library\Library\0.自建\3.电源\0.03电源.LibPkg
