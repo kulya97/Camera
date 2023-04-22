@@ -1,0 +1,8 @@
+[ProjectGroup]
+Version=1.0
+[Project1]
+ProjectPath=001.fpgaboardV2\001.fpgaboard-V2.PrjPcb
+[Project2]
+ProjectPath=002.botom\002.botom.PrjPcb
+[Project3]
+ProjectPath=003.ccd424\003.ccd424.PrjPcb
