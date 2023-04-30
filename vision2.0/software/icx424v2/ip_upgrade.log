@@ -1,0 +1,37 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Apr 30 14:48:50 2023
+| Host         : Administrator running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tfbg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'sync_fifo_2048x32b'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of sync_fifo_2048x32b (xilinx.com:ip:fifo_generator:13.2 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Jan 17 12:15:54 2023
+| Host         : DESKTOP-EUE10UA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tfbg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fifo_tx'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of fifo_tx (xilinx.com:ip:fifo_generator:13.2 (Rev. 7)) to Vivado generation flows.
+

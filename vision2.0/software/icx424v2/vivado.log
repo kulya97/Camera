@@ -1,0 +1,825 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Apr 30 14:24:25 2023
+# Process ID: 24980
+# Current directory: E:/Github/Camera/vision2.0/software/icx424v2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3084 E:\Github\Camera\vision2.0\software\icx424v2\icx424.xpr
+# Log file: E:/Github/Camera/vision2.0/software/icx424v2/vivado.log
+# Journal file: E:/Github/Camera/vision2.0/software/icx424v2\vivado.jou
+# Running On: Administrator, OS: Windows, CPU Frequency: 3000 MHz, CPU Physical cores: 6, Host memory: 8389 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/Github/Camera/vision2.0/software/icx424v2/icx424.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at D:/HardWare/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at D:/HardWare/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/HardWare/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/HardWare/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/HardWare/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/HardWare/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'E:/workspace/xilinx/icx424' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/HardWare/Xilinx/Vivado/2022.1/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 1771.172 ; gain = 210.172
+update_compile_order -fileset sources_1
+add_files -norecurse {E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xci}
+CRITICAL WARNING: [IP_Flow 19-3389] Failed to import IP file 'E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci': IP name 'fifo_tx' is already in use in this project.  Please choose a different name.
+
+CRITICAL WARNING: [Vivado 12-1464] The source file 'E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci' cannot be added to the fileset 'sources_1'.
+WARNING: [IP_Flow 19-2162] IP 'sync_fifo_2048x32b' is locked:
+* Current project part 'xc7a200tfbg484-2' and the part 'xc7a35tfgg484-2' used to customize the IP 'sync_fifo_2048x32b' do not match.
+WARNING: [Vivado 12-13651] The IP file 'E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in 'e:/Github/Camera/vision2.0/software/icx424v2/eth_udp_loop.gen/sources_1/ip/sync_fifo_2048x32b'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+export_ip_user_files -of_objects  [get_files  E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xci] -lib_map_path [list {modelsim=E:/Github/Camera/vision2.0/software/icx424v2/icx424.cache/compile_simlib/modelsim} {questa=E:/Github/Camera/vision2.0/software/icx424v2/icx424.cache/compile_simlib/questa} {riviera=E:/Github/Camera/vision2.0/software/icx424v2/icx424.cache/compile_simlib/riviera} {activehdl=E:/Github/Camera/vision2.0/software/icx424v2/icx424.cache/compile_simlib/activehdl}] -force -quiet
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:ip:fifo_generator:13.2 [get_ips  sync_fifo_2048x32b] -log ip_upgrade.log
+Upgrading 'sync_fifo_2048x32b'
+INFO: [IP_Flow 19-3420] Updated sync_fifo_2048x32b to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'sync_fifo_2048x32b'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'E:/Github/Camera/vision2.0/software/icx424v2/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips sync_fifo_2048x32b] -no_script -sync -force -quiet
+convert_ips [get_files  E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xci]
+INFO: [filemgmt 56-106] Converting IP 'sync_fifo_2048x32b' into core container format.
+INFO: [filemgmt 56-101] Creating core container 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/sync_fifo_2048x32b.xcix' for IP 'sync_fifo_2048x32b'
+export_ip_user_files -of_objects  [get_files  e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xci] -sync -lib_map_path [list {modelsim=E:/Github/Camera/vision2.0/software/icx424v2/icx424.cache/compile_simlib/modelsim} {questa=E:/Github/Camera/vision2.0/software/icx424v2/icx424.cache/compile_simlib/questa} {riviera=E:/Github/Camera/vision2.0/software/icx424v2/icx424.cache/compile_simlib/riviera} {activehdl=E:/Github/Camera/vision2.0/software/icx424v2/icx424.cache/compile_simlib/activehdl}] -force -quiet
+generate_target all [get_files  e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'sync_fifo_2048x32b'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'sync_fifo_2048x32b'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'sync_fifo_2048x32b'...
+catch { config_ip_cache -export [get_ips -all sync_fifo_2048x32b] }
+export_ip_user_files -of_objects [get_files e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xci]
+launch_runs sync_fifo_2048x32b_synth_1 -jobs 6
+[Sun Apr 30 14:49:01 2023] Launched sync_fifo_2048x32b_synth_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/sync_fifo_2048x32b_synth_1/runme.log
+export_simulation -of_objects [get_files e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xci] -directory E:/Github/Camera/vision2.0/software/icx424v2/icx424.ip_user_files/sim_scripts -ip_user_files_dir E:/Github/Camera/vision2.0/software/icx424v2/icx424.ip_user_files -ipstatic_source_dir E:/Github/Camera/vision2.0/software/icx424v2/icx424.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Github/Camera/vision2.0/software/icx424v2/icx424.cache/compile_simlib/modelsim} {questa=E:/Github/Camera/vision2.0/software/icx424v2/icx424.cache/compile_simlib/questa} {riviera=E:/Github/Camera/vision2.0/software/icx424v2/icx424.cache/compile_simlib/riviera} {activehdl=E:/Github/Camera/vision2.0/software/icx424v2/icx424.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.CLKOUT5_USED {true} CONFIG.CLK_OUT5_PORT {eth_clk} CONFIG.CLKOUT5_REQUESTED_OUT_FREQ {200} CONFIG.MMCM_CLKOUT4_DIVIDE {5} CONFIG.NUM_OUT_CLKS {5} CONFIG.CLKOUT5_JITTER {98.146} CONFIG.CLKOUT5_PHASE_ERROR {89.971}] [get_ips clk_wiz_0]
+generate_target all [get_files  E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci] -no_script -sync -force -quiet
+reset_run clk_wiz_0_synth_1
+launch_runs clk_wiz_0_synth_1 -jobs 6
+[Sun Apr 30 14:59:31 2023] Launched clk_wiz_0_synth_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/clk_wiz_0_2/clk_wiz_0.xci] -directory E:/Github/Camera/vision2.0/software/icx424v2/icx424.ip_user_files/sim_scripts -ip_user_files_dir E:/Github/Camera/vision2.0/software/icx424v2/icx424.ip_user_files -ipstatic_source_dir E:/Github/Camera/vision2.0/software/icx424v2/icx424.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Github/Camera/vision2.0/software/icx424v2/icx424.cache/compile_simlib/modelsim} {questa=E:/Github/Camera/vision2.0/software/icx424v2/icx424.cache/compile_simlib/questa} {riviera=E:/Github/Camera/vision2.0/software/icx424v2/icx424.cache/compile_simlib/riviera} {activehdl=E:/Github/Camera/vision2.0/software/icx424v2/icx424.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+INFO: [Project 1-1160] Copying file E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/Top.dcp to E:/workspace/xilinx/icx424/icx424.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1
+
+launch_runs impl_1 -jobs 6
+[Sun Apr 30 14:59:52 2023] Launched clk_wiz_0_synth_1, synth_1...
+Run output will be captured here:
+clk_wiz_0_synth_1: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/clk_wiz_0_synth_1/runme.log
+synth_1: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/runme.log
+[Sun Apr 30 14:59:52 2023] Launched impl_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/runme.log
+export_ip_user_files -of_objects  [get_files E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci] -no_script -reset -force -quiet
+remove_files  -fileset fifo_tx E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci
+INFO: [Project 1-386] Moving file 'E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci' from fileset 'fifo_tx' to fileset 'sources_1'.
+import_files
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'clk_wiz_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'clk_wiz_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sync_fifo_2048x32b'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sync_fifo_2048x32b'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'utils_1'
+WARNING: [filemgmt 20-354] The following file(s) were not imported. Local copy of file(s) already exists:
+E:/workspace/xilinx/icx424/icx424.srcs/utils_1/imports/synth_1/Top.dcp
+Hint: use the '-force' option to overwrite the local copies.
+add_files -norecurse E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci
+WARNING: [IP_Flow 19-3664] IP 'fifo_tx' generated file not found 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.vho'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_tx' generated file not found 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.veo'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_tx' generated file not found 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_tx' generated file not found 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xdc'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_tx' generated file not found 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_tx' generated file not found 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx_ooc.xdc'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_tx' generated file not found 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/synth/fifo_tx.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_tx' generated file not found 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/simulation/fifo_generator_vlog_beh.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_tx' generated file not found 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/hdl/fifo_generator_v13_2_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_tx' generated file not found 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/hdl/fifo_generator_v13_2_rfs.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_tx' generated file not found 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/sim/fifo_tx.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_tx' generated file not found 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/doc/fifo_generator_v13_2_changelog.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_tx' generated file not found 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_tx' generated file not found 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_tx' generated file not found 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_tx' generated file not found 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_tx' generated file not found 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [Vivado 12-13651] The IP file 'E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+export_ip_user_files -of_objects  [get_files  E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci] -lib_map_path [list {modelsim=E:/Github/Camera/vision2.0/software/icx424v2/icx424.cache/compile_simlib/modelsim} {questa=E:/Github/Camera/vision2.0/software/icx424v2/icx424.cache/compile_simlib/questa} {riviera=E:/Github/Camera/vision2.0/software/icx424v2/icx424.cache/compile_simlib/riviera} {activehdl=E:/Github/Camera/vision2.0/software/icx424v2/icx424.cache/compile_simlib/activehdl}] -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo_tx'...
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP fifo_tx, cache-ID = e9367b03da2b9198; cache size = 3.183 MB.
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci' is already up-to-date
+[Sun Apr 30 15:04:29 2023] Launched synth_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/runme.log
+[Sun Apr 30 15:04:29 2023] Launched impl_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci' is already up-to-date
+[Sun Apr 30 15:06:09 2023] Launched synth_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/runme.log
+[Sun Apr 30 15:06:09 2023] Launched impl_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a200tfbg484-2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 2351.617 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 231 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'instance_name/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.353 . Memory (MB): peak = 3082.395 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.355 . Memory (MB): peak = 3082.395 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3082.395 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 3212.258 ; gain = 1094.480
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file E:/workspace/xilinx/icx424/icx424.srcs/utils_1/imports/synth_1/Top.dcp with file E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/Top.dcp
+launch_runs impl_1 -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci' is already up-to-date
+[Sun Apr 30 16:57:32 2023] Launched synth_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/runme.log
+[Sun Apr 30 16:57:32 2023] Launched impl_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tfbg484-2
+INFO: [Project 1-454] Reading design checkpoint 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'instance_name'
+INFO: [Project 1-454] Reading design checkpoint 'E:/Github/Camera/vision2.0/software/icx424v2/.Xil/Vivado-24980-Administrator/sync_fifo_2048x32b/sync_fifo_2048x32b.dcp' for cell 'u_eth_udp_loop/u_sync_fifo_2048x32b'
+INFO: [Project 1-454] Reading design checkpoint 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.dcp' for cell 'uart0/fifo_tx_inst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 3337.488 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 231 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-35] Removing redundant IBUF, instance_name/inst/clkin1_ibufg, from the path connected to top-level port: sys_clk_p 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'instance_name/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xdc] for cell 'uart0/fifo_tx_inst/U0'
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xdc] for cell 'uart0/fifo_tx_inst/U0'
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'instance_name/inst'
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'instance_name/inst'
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'instance_name/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'instance_name/inst'
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_eth_udp_loop/u_sync_fifo_2048x32b/U0'
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_eth_udp_loop/u_sync_fifo_2048x32b/U0'
+Parsing XDC File [E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/constrs_1/new/top.xdc]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/constrs_1/new/top.xdc:64]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal rst_n cannot be placed on M17 (IOB_X0Y150) because the pad is already occupied by terminal CM_DATA[6] possibly due to user constraint [E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/constrs_1/new/top.xdc:131]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Could not legally place instance eth_rxc_IBUF_inst at L16 (IOB_X0Y154) since it belongs to a shape containing instance u_eth_udp_loop/u_gmii_to_rgmii/u_rgmii_rx/BUFIO_inst. The shape requires relative placement between eth_rxc_IBUF_inst and u_eth_udp_loop/u_gmii_to_rgmii/u_rgmii_rx/BUFIO_inst that can not be honoured because it would result in an invalid location for u_eth_udp_loop/u_gmii_to_rgmii/u_rgmii_rx/BUFIO_inst. [E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/constrs_1/new/top.xdc:147]
+Finished Parsing XDC File [E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/constrs_1/new/top.xdc]
+INFO: [Project 1-1714] 1 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3337.488 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file E:/workspace/xilinx/icx424/icx424.srcs/utils_1/imports/synth_1/Top.dcp with file E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/Top.dcp
+launch_runs synth_1 -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci' is already up-to-date
+[Sun Apr 30 17:08:04 2023] Launched synth_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tfbg484-2
+INFO: [Project 1-454] Reading design checkpoint 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'instance_name'
+INFO: [Project 1-454] Reading design checkpoint 'E:/Github/Camera/vision2.0/software/icx424v2/.Xil/Vivado-24980-Administrator/sync_fifo_2048x32b/sync_fifo_2048x32b.dcp' for cell 'u_eth_udp_loop/u_sync_fifo_2048x32b'
+INFO: [Project 1-454] Reading design checkpoint 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.dcp' for cell 'uart0/fifo_tx_inst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 3337.488 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 231 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-35] Removing redundant IBUF, instance_name/inst/clkin1_ibufg, from the path connected to top-level port: sys_clk_p 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'instance_name/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xdc] for cell 'uart0/fifo_tx_inst/U0'
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xdc] for cell 'uart0/fifo_tx_inst/U0'
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'instance_name/inst'
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'instance_name/inst'
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'instance_name/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'instance_name/inst'
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_eth_udp_loop/u_sync_fifo_2048x32b/U0'
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_eth_udp_loop/u_sync_fifo_2048x32b/U0'
+Parsing XDC File [E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/constrs_1/new/top.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal rst_n cannot be placed on M17 (IOB_X0Y150) because the pad is already occupied by terminal CM_DATA[6] possibly due to user constraint [E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/constrs_1/new/top.xdc:131]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Could not legally place instance eth_rxc_IBUF_inst at L16 (IOB_X0Y154) since it belongs to a shape containing instance u_eth_udp_loop/u_gmii_to_rgmii/u_rgmii_rx/BUFIO_inst. The shape requires relative placement between eth_rxc_IBUF_inst and u_eth_udp_loop/u_gmii_to_rgmii/u_rgmii_rx/BUFIO_inst that can not be honoured because it would result in an invalid location for u_eth_udp_loop/u_gmii_to_rgmii/u_rgmii_rx/BUFIO_inst. [E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/constrs_1/new/top.xdc:147]
+Finished Parsing XDC File [E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/constrs_1/new/top.xdc]
+INFO: [Project 1-1714] 1 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3355.980 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+set_property IOSTANDARD LVCMOS18 [get_ports [list {eth_rxd[3]} {eth_rxd[2]} {eth_rxd[1]} {eth_rxd[0]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {eth_txd[3]} {eth_txd[2]} {eth_txd[1]} {eth_txd[0]}]]
+save_constraints
+launch_runs impl_1 -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci' is already up-to-date
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.154 . Memory (MB): peak = 3355.980 ; gain = 0.000
+[Sun Apr 30 17:10:25 2023] Launched impl_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/runme.log
+set_property IOSTANDARD LVCMOS33 [get_ports [list {eth_rxd[3]} {eth_rxd[2]} {eth_rxd[1]} {eth_rxd[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {eth_txd[3]} {eth_txd[2]} {eth_txd[1]} {eth_txd[0]}]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci' is already up-to-date
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 3355.980 ; gain = 0.000
+[Sun Apr 30 17:12:53 2023] Launched impl_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/runme.log
+set_property IOSTANDARD LVCMOS33 [get_ports [list eth_rxc]]
+set_property is_loc_fixed true [get_ports [list  eth_rxc]]
+set_property package_pin "" [get_ports [list  eth_rxc]]
+set_property OFFCHIP_TERM NONE [get_ports [list eth_rxc]]
+set_property IOSTANDARD HSTL_I [get_ports [list eth_rxc]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list eth_rxc]]
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci'
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xdc] for cell 'uart0/fifo_tx_inst/U0'
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xdc] for cell 'uart0/fifo_tx_inst/U0'
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'instance_name/inst'
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'instance_name/inst'
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'instance_name/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'instance_name/inst'
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_eth_udp_loop/u_sync_fifo_2048x32b/U0'
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_eth_udp_loop/u_sync_fifo_2048x32b/U0'
+Parsing XDC File [E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/constrs_1/new/top.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal rst_n cannot be placed on M17 (IOB_X0Y150) because the pad is already occupied by terminal CM_DATA[6] possibly due to user constraint [E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/constrs_1/new/top.xdc:131]
+Finished Parsing XDC File [E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/constrs_1/new/top.xdc]
+INFO: [Project 1-1714] 1 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+set_property package_pin "" [get_ports [list  {eth_rxd[3]} {eth_rxd[2]} {eth_rxd[1]} {eth_rxd[0]}]]
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci'
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xdc] for cell 'uart0/fifo_tx_inst/U0'
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xdc] for cell 'uart0/fifo_tx_inst/U0'
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'instance_name/inst'
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'instance_name/inst'
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'instance_name/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'instance_name/inst'
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_eth_udp_loop/u_sync_fifo_2048x32b/U0'
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_eth_udp_loop/u_sync_fifo_2048x32b/U0'
+Parsing XDC File [E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/constrs_1/new/top.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal rst_n cannot be placed on M17 (IOB_X0Y150) because the pad is already occupied by terminal CM_DATA[6] possibly due to user constraint [E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/constrs_1/new/top.xdc:131]
+Finished Parsing XDC File [E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/constrs_1/new/top.xdc]
+INFO: [Project 1-1714] 1 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+set_property package_pin "" [get_ports [list  eth_rxc]]
+set_property package_pin "" [get_ports [list  eth_rxc]]
+save_constraints
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file E:/workspace/xilinx/icx424/icx424.srcs/utils_1/imports/synth_1/Top.dcp with file E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/Top.dcp
+launch_runs synth_1 -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci' is already up-to-date
+[Sun Apr 30 17:27:40 2023] Launched synth_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/runme.log
+set_property OFFCHIP_TERM NONE [get_ports [list eth_rxc]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list eth_rxc]]
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tfbg484-2
+INFO: [Project 1-454] Reading design checkpoint 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'instance_name'
+INFO: [Project 1-454] Reading design checkpoint 'E:/Github/Camera/vision2.0/software/icx424v2/.Xil/Vivado-24980-Administrator/sync_fifo_2048x32b/sync_fifo_2048x32b.dcp' for cell 'u_eth_udp_loop/u_sync_fifo_2048x32b'
+INFO: [Project 1-454] Reading design checkpoint 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.dcp' for cell 'uart0/fifo_tx_inst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 3376.633 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 231 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-35] Removing redundant IBUF, instance_name/inst/clkin1_ibufg, from the path connected to top-level port: sys_clk_p 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'instance_name/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xdc] for cell 'uart0/fifo_tx_inst/U0'
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xdc] for cell 'uart0/fifo_tx_inst/U0'
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'instance_name/inst'
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'instance_name/inst'
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'instance_name/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'instance_name/inst'
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_eth_udp_loop/u_sync_fifo_2048x32b/U0'
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_eth_udp_loop/u_sync_fifo_2048x32b/U0'
+Parsing XDC File [E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/constrs_1/new/top.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal rst_n cannot be placed on M17 (IOB_X0Y150) because the pad is already occupied by terminal CM_DATA[6] possibly due to user constraint [E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/constrs_1/new/top.xdc:131]
+Finished Parsing XDC File [E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/constrs_1/new/top.xdc]
+INFO: [Project 1-1714] 1 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3381.871 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+set_property IOSTANDARD LVCMOS33 [get_ports [list eth_rxc]]
+set_property package_pin "" [get_ports [list  eth_rxc]]
+set_property is_loc_fixed true [get_ports [list  eth_rxc]]
+set_property is_loc_fixed true [get_ports [list  eth_rxc]]
+place_ports eth_rxc H3
+startgroup
+set_property package_pin "" [get_ports [list  XV3]]
+place_ports eth_rxc B17
+endgroup
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tfbg484-2
+INFO: [Project 1-454] Reading design checkpoint 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'instance_name'
+INFO: [Project 1-454] Reading design checkpoint 'E:/Github/Camera/vision2.0/software/icx424v2/.Xil/Vivado-24980-Administrator/sync_fifo_2048x32b/sync_fifo_2048x32b.dcp' for cell 'u_eth_udp_loop/u_sync_fifo_2048x32b'
+INFO: [Project 1-454] Reading design checkpoint 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.dcp' for cell 'uart0/fifo_tx_inst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 3381.871 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 231 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-35] Removing redundant IBUF, instance_name/inst/clkin1_ibufg, from the path connected to top-level port: sys_clk_p 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'instance_name/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xdc] for cell 'uart0/fifo_tx_inst/U0'
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xdc] for cell 'uart0/fifo_tx_inst/U0'
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'instance_name/inst'
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'instance_name/inst'
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'instance_name/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'instance_name/inst'
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_eth_udp_loop/u_sync_fifo_2048x32b/U0'
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_eth_udp_loop/u_sync_fifo_2048x32b/U0'
+Parsing XDC File [E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/constrs_1/new/top.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal rst_n cannot be placed on M17 (IOB_X0Y150) because the pad is already occupied by terminal CM_DATA[6] possibly due to user constraint [E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/constrs_1/new/top.xdc:131]
+Finished Parsing XDC File [E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/constrs_1/new/top.xdc]
+INFO: [Project 1-1714] 1 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3392.684 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+set_property package_pin "" [get_ports [list  eth_rxc]]
+save_constraints
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file E:/workspace/xilinx/icx424/icx424.srcs/utils_1/imports/synth_1/Top.dcp with file E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/Top.dcp
+launch_runs synth_1 -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci' is already up-to-date
+[Sun Apr 30 17:42:20 2023] Launched synth_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/runme.log
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci'
+refresh_design
+INFO: [Project 1-454] Reading design checkpoint 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'instance_name'
+INFO: [Project 1-454] Reading design checkpoint 'E:/Github/Camera/vision2.0/software/icx424v2/.Xil/Vivado-24980-Administrator/sync_fifo_2048x32b/sync_fifo_2048x32b.dcp' for cell 'u_eth_udp_loop/u_sync_fifo_2048x32b'
+INFO: [Project 1-454] Reading design checkpoint 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.dcp' for cell 'uart0/fifo_tx_inst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 3392.684 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 231 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-35] Removing redundant IBUF, instance_name/inst/clkin1_ibufg, from the path connected to top-level port: sys_clk_p 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'instance_name/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xdc] for cell 'uart0/fifo_tx_inst/U0'
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xdc] for cell 'uart0/fifo_tx_inst/U0'
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'instance_name/inst'
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'instance_name/inst'
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'instance_name/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'instance_name/inst'
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_eth_udp_loop/u_sync_fifo_2048x32b/U0'
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_eth_udp_loop/u_sync_fifo_2048x32b/U0'
+Parsing XDC File [E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/constrs_1/new/top.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal rst_n cannot be placed on M17 (IOB_X0Y150) because the pad is already occupied by terminal CM_DATA[6] possibly due to user constraint [E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/constrs_1/new/top.xdc:131]
+Finished Parsing XDC File [E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/constrs_1/new/top.xdc]
+INFO: [Project 1-1714] 1 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 3416.414 ; gain = 23.730
+set_property package_pin "" [get_ports [list  eth_rxc]]
+save_constraints
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file E:/workspace/xilinx/icx424/icx424.srcs/utils_1/imports/synth_1/Top.dcp with file E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/Top.dcp
+launch_runs synth_1 -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci' is already up-to-date
+[Sun Apr 30 17:44:16 2023] Launched synth_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/runme.log
+set_property package_pin "" [get_ports [list  eth_rxc]]
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tfbg484-2
+INFO: [Project 1-454] Reading design checkpoint 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'instance_name'
+INFO: [Project 1-454] Reading design checkpoint 'E:/Github/Camera/vision2.0/software/icx424v2/.Xil/Vivado-24980-Administrator/sync_fifo_2048x32b/sync_fifo_2048x32b.dcp' for cell 'u_eth_udp_loop/u_sync_fifo_2048x32b'
+INFO: [Project 1-454] Reading design checkpoint 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.dcp' for cell 'uart0/fifo_tx_inst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 3416.414 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 145 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-35] Removing redundant IBUF, instance_name/inst/clkin1_ibufg, from the path connected to top-level port: sys_clk_p 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'instance_name/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xdc] for cell 'uart0/fifo_tx_inst/U0'
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xdc] for cell 'uart0/fifo_tx_inst/U0'
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'instance_name/inst'
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'instance_name/inst'
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'instance_name/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'instance_name/inst'
+Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_eth_udp_loop/u_sync_fifo_2048x32b/U0'
+Finished Parsing XDC File [e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_eth_udp_loop/u_sync_fifo_2048x32b/U0'
+Parsing XDC File [E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/constrs_1/new/top.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal rst_n cannot be placed on M17 (IOB_X0Y150) because the pad is already occupied by terminal CM_DATA[6] possibly due to user constraint [E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/constrs_1/new/top.xdc:131]
+Finished Parsing XDC File [E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/constrs_1/new/top.xdc]
+INFO: [Project 1-1714] 1 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3416.414 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+place_ports eth_rxc L16
+set_property IOSTANDARD LVCMOS33 [get_ports [list eth_rxc]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci' is already up-to-date
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.141 . Memory (MB): peak = 3416.414 ; gain = 0.000
+[Sun Apr 30 17:46:56 2023] Launched impl_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.1
+  **** Build date : Apr 18 2022 at 16:02:36
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.1.0
+  ****** Build date   : Apr 13 2022-03:12:08
+    **** Build number : 2022.1.1649790728
+      ** Copyright 2017-2023 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 3416.414 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 5443.695 ; gain = 2027.281
+set_property PROGRAM.FILE {E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/Top.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+create_hw_cfgmem -hw_device [get_hw_devices xc7a200t_0] -mem_dev [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/Top.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 5479.488 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file E:/workspace/xilinx/icx424/icx424.srcs/utils_1/imports/synth_1/Top.dcp with file E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/Top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Apr 30 17:58:03 2023] Launched synth_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/runme.log
+[Sun Apr 30 17:58:03 2023] Launched impl_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file E:/workspace/xilinx/icx424/icx424.srcs/utils_1/imports/synth_1/Top.dcp with file E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/Top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Apr 30 18:05:43 2023] Launched synth_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/runme.log
+[Sun Apr 30 18:05:43 2023] Launched impl_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file E:/workspace/xilinx/icx424/icx424.srcs/utils_1/imports/synth_1/Top.dcp with file E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/Top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Apr 30 19:13:26 2023] Launched synth_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/runme.log
+[Sun Apr 30 19:13:26 2023] Launched impl_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Apr 30 19:16:36 2023] Launched synth_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/runme.log
+[Sun Apr 30 19:16:36 2023] Launched impl_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Apr 30 19:17:34 2023] Launched synth_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/runme.log
+[Sun Apr 30 19:17:34 2023] Launched impl_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file E:/workspace/xilinx/icx424/icx424.srcs/utils_1/imports/synth_1/Top.dcp with file E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/Top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Apr 30 19:24:17 2023] Launched synth_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/runme.log
+[Sun Apr 30 19:24:17 2023] Launched impl_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/Top.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 5538.629 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file E:/workspace/xilinx/icx424/icx424.srcs/utils_1/imports/synth_1/Top.dcp with file E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/Top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Apr 30 19:32:20 2023] Launched synth_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/runme.log
+[Sun Apr 30 19:32:20 2023] Launched impl_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file E:/workspace/xilinx/icx424/icx424.srcs/utils_1/imports/synth_1/Top.dcp with file E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/Top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Apr 30 19:37:33 2023] Launched synth_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/runme.log
+[Sun Apr 30 19:37:33 2023] Launched impl_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/Top.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 5538.629 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xc7a200t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xc7a200t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/Top.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 5539.652 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xc7a200t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/Top.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 5539.652 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xc7a200t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/Top.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 5539.652 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xc7a200t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/Top.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 5539.793 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xc7a200t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/Top.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 5539.793 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210512180081.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+INFO: [Labtools 27-1435] Device xc7a200t (JTAG device index = 0) is not programmed (DONE status = 0).
+get_cfgmem_parts: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 5539.805 ; gain = 0.000
+refresh_hw_device: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 5539.805 ; gain = 0.000
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/Top.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 5539.805 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/Top.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 5539.805 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xc7a200t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/Top.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 5540.059 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xc7a200t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/Top.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 5540.059 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_0
+INFO: [filemgmt 56-101] Creating core container 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/ila_0.xcix' for IP 'ila_0'
+set_property -dict [list CONFIG.C_PROBE1_WIDTH {16} CONFIG.C_DATA_DEPTH {65536} CONFIG.C_NUM_OF_PROBES {4}] [get_ips ila_0]
+generate_target {instantiation_template} [get_files e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+generate_target all [get_files  e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+catch { config_ip_cache -export [get_ips -all ila_0] }
+export_ip_user_files -of_objects [get_files e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/ila_0/ila_0.xci]
+launch_runs ila_0_synth_1 -jobs 6
+[Sun Apr 30 21:31:08 2023] Launched ila_0_synth_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/ila_0_synth_1/runme.log
+export_simulation -of_objects [get_files e:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/ila_0/ila_0.xci] -directory E:/Github/Camera/vision2.0/software/icx424v2/icx424.ip_user_files/sim_scripts -ip_user_files_dir E:/Github/Camera/vision2.0/software/icx424v2/icx424.ip_user_files -ipstatic_source_dir E:/Github/Camera/vision2.0/software/icx424v2/icx424.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Github/Camera/vision2.0/software/icx424v2/icx424.cache/compile_simlib/modelsim} {questa=E:/Github/Camera/vision2.0/software/icx424v2/icx424.cache/compile_simlib/questa} {riviera=E:/Github/Camera/vision2.0/software/icx424v2/icx424.cache/compile_simlib/riviera} {activehdl=E:/Github/Camera/vision2.0/software/icx424v2/icx424.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file E:/workspace/xilinx/icx424/icx424.srcs/utils_1/imports/synth_1/Top.dcp with file E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/Top.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Github/Camera/vision2.0/software/icx424v2/icx424.srcs/sources_1/ip/fifo_tx/fifo_tx.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Apr 30 21:34:33 2023] Launched synth_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/synth_1/runme.log
+[Sun Apr 30 21:34:33 2023] Launched impl_1...
+Run output will be captured here: E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/Top.ltx} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/Top.ltx} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {E:/Github/Camera/vision2.0/software/icx424v2/icx424.runs/impl_1/Top.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 5644.965 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-30 21:41:46
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-30 21:41:46
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Github/Camera/vision2.0/software/icx424v2/icx424.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-30 22:03:42
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-30 22:03:42
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Github/Camera/vision2.0/software/icx424v2/icx424.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes frame_valid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-30 22:04:23
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-30 22:04:23
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Github/Camera/vision2.0/software/icx424v2/icx424.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-695] HW Server shut down, disconnecting from server: localhost:3121
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 30 22:12:49 2023...
