@@ -1,5 +1,5 @@
-Record=TopLevelDocument|FileName=ADC.SchDoc|SheetNumber=3
-Record=NoMainPathDocument|SourceDocument=ADC.SchDoc|FileName=CCD.SchDoc|SheetNumber=4
-Record=NoMainPathDocument|SourceDocument=ADC.SchDoc|FileName=connect.SchDoc|SheetNumber=1
-Record=NoMainPathDocument|SourceDocument=ADC.SchDoc|FileName=power.SchDoc|SheetNumber=2
+Record=TopLevelDocument|FileName=ADC.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=ADC.SchDoc|FileName=CCD.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=ADC.SchDoc|FileName=connect.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=ADC.SchDoc|FileName=power.SchDoc|SheetNumber=4
 Record=NoMainPathDocument|SourceDocument=ADC.SchDoc|FileName=timing.SchDoc|SheetNumber=5
